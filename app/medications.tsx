@@ -95,7 +95,7 @@ export default function MedicationsScreen() {
     setShowTimePicker(true);
   };
 
-  const onTimeChange = async (event, selectedDate) => {
+   const onTimeChange = async (event, selectedDate) => {
     setShowTimePicker(false);
     if (event.type === 'set' && selectedDate && selectedMed) {
       const hour = selectedDate.getHours();
@@ -105,7 +105,7 @@ export default function MedicationsScreen() {
         content: {
           title: "Medication Reminder! 💊",
           body: `It's time to take your ${selectedMed.name}.`,
-          sound: 'default',
+          sound: 'alarm.wav', // --- ADD THIS LINE ---
         },
         trigger: {
           hour: hour,

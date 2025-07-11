@@ -53,8 +53,10 @@ export default function PatientDetailScreen() {
         createdAt: serverTimestamp(),
         doctorName: "Dr. Name"
       });
-      setRecommendation('');
+      setRecommendation(''); // Clear the input box
+      Alert.alert('Success', 'Recommendation sent!'); // --- THIS IS THE FIX ---
     } catch (error) {
+      console.error("Error sending recommendation: ", error);
       Alert.alert('Error', 'Failed to send recommendation.');
     } finally {
       setIsSending(false);
