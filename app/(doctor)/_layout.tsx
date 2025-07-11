@@ -21,6 +21,7 @@ export default function DoctorTabsLayout() {
         // --- TAB BAR STYLES ---
         tabBarActiveTintColor: colors.primary,
         tabBarInactiveTintColor: colors.tabIcon,
+        tabBarInactiveBackgroundColor: 'rgba(255, 255, 255, 0.05)',
         tabBarStyle: {
           backgroundColor: colors.tabBar,
           borderTopColor: colors.border,

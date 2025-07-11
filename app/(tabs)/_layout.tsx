@@ -62,6 +62,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   inactiveTab: {
-    padding: 12,
+     width: 55,
+    height: 55,
+    borderRadius: 30,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
   },
 });
